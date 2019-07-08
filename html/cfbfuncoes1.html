@@ -7,12 +7,12 @@
         <script>
 
 
-
+            //https://www.youtube.com/watch?v=Y9kOOEVGALI
             //RECEBENDO PARAMETROS E RETORNANDO UM VALOR E TAMBEM RECEBENDO UM ARRAY//PASSO OS NUMEROS QUE QUERO OPERAR PARA O ARRAY.
             var numeros = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9);
 
             function media(nums) {
-                var tam = nums.length;
+                var tam = nums.length; //length esta pegando o tamanho desse Array
                 var soma = 0;
                 for (var i = 0; i < tam; i++) {
                     soma += nums[i];
@@ -37,7 +37,40 @@
 
             //RECEBENDO PARAMETROS(N1,N2)///
             function soma(n1, n2) {
-                var resultado = n1 + n2;
+                var resulta
+
+                function acender(nome = 'fulano') {
+                    console.log(nome, "acendeu um cigarro");
+                }
+
+
+                function apagar(nome = 'cicrano') {
+
+
+                    console.log(nome, "apagou o cigarro")
+
+                }
+
+                function fumar() {
+
+                    acender();
+                    apagar();
+                }
+
+                acender('joao');
+
+
+
+                fumar();
+                apagar();
+
+
+
+                console.log('estou aqui');
+
+
+
+                do = n1 + n2;
                 document.write(resultado + '<br>'); ////<br> <-- separa tudo linha por linha()
             }
             soma(5, 2);
